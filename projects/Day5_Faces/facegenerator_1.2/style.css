@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+button {
+  position: fixed;
+  background-color: black;
+  color: azure;
+  padding: 12pt;
+  stroke: black;
+  font-size: 32px;
+  border-radius: 1000px;
+  transform: translate(-50%, -50%);
+}
