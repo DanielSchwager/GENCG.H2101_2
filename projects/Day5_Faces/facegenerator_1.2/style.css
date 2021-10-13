@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-body {
+html {
   transform: scale(0.5);
 }
 
