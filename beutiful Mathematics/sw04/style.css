@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.root {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+resetButton {
+  background-color: aqua;
+  color: azure;
+  padding: 8pt;
+  stroke: black;
+  font-size: 32px;
+  border-radius: 11px;
+}

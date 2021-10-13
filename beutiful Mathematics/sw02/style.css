@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  background-color: #dbdbdb;
+}
+
+button {
+  background-color: aqua;
+  color: azure;
+  padding: 8pt;
+  stroke: black;
+  font-size: 32px;
+  border-radius: 11px;
+  /* text-align: center;
+  display: inline-block;
+  position: relative; */
+  /* display: flex; */
+}
+
+button2 {
+  background-color: rgb(255, 0, 0);
+  color: azure;
+  padding: 8pt;
+  stroke: black;
+  font-size: 32px;
+  border-radius: 11px;
+  /* text-align: center;
+  display: inline-block;
+  position: relative; */
+  /* display: flex; */
+}
+p {
+  font-size: 28px;
+}

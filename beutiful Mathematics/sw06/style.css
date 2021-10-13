@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  height:40px;
+  width: 800px;
+  text-align: center;
+  color: rgb(151, 35, 180);
+  font-size: 56px;
+}
