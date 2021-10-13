@@ -35,7 +35,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 {% raw %}
 
-<iframe src="projects/Day4_Machines/Machine_2/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day4_Machines/Machine_1.2/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
 - Lorem ipsum dolor sit amet
