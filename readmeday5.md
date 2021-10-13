@@ -39,5 +39,5 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 {% raw %}
 
-<iframe src="projects\Day5_Faces\facegenerator_1.2\index.html" width="450" height="450" frameborder="no"></iframe>
+<iframe src="projects\Day5_Faces\facegenerator_1.2\index.html" width="1450" height="450" frameborder="no"></iframe>
 {% endraw %}
