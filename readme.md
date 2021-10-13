@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 {% raw %}
 
-<iframe src="projects/Grid/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
 ## Computing with computer

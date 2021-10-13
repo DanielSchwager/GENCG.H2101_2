@@ -1,6 +1,6 @@
 # Day 05
 
-## Computing without computer
+## Face Generator
 
 ### Sollewit: Wall drawing
 

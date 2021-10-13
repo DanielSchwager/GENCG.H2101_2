@@ -3,7 +3,7 @@ let outerCircle;
 let smalCircles;
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(600, 600);
 
   heightCircle = 350;
   outerCircle = heightCircle + 20;
