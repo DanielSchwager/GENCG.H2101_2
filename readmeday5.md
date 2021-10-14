@@ -10,7 +10,7 @@ Create a program that is generating a parametric face. Your face should at least
 
 My intial idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
 
-![Example Image](Dokumentation/Tag 5/Konzept.jpg)
+![Example Image](Dokumentation/Tag 5/Konzept_1.jpg)
 
 ### Input
 
