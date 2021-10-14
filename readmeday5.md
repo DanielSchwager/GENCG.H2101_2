@@ -29,8 +29,8 @@ I started to create a Prototype which works like my Concept. Thet means it split
 
 Here is the most important Code used for the Prototype.
 
-random(faces); gets a random Image out of the Array Faces
-img.get(startX, startY, width, height); gets the defined Part of the Picture
+random(faces); gets a random Image out of the Array Faces  
+img.get(startX, startY, width, height); gets the defined Part of the Picture  
 image(img, x, y); draws the picture on the defined x,y-coordinates
 
 ```js
