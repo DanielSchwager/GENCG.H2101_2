@@ -71,4 +71,84 @@ In the final product I wanted not only rows but also collums which can be adjust
 <iframe src="projects\Day5_Faces\facegenerator_1.2\index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
-![Example Image](Dokumentation/Tag 5/300px.gif)
+### Code
+
+First, all source images are loaded in the preload function. This is done by a For-Loop which loops through the number of images (imageCount).
+
+```js
+let faces = [];
+let colsSlider;
+let cols;
+let rowsSlider;
+let rows;
+let imageCount = 19;
+
+function preload() {
+  for (let i = 0; i < imageCount; i++) {
+    faces[i] = loadImage("images/Face_" + i + ".png");
+  }
+}
+```
+
+The canvas is now created in the setup. I worked with 1200 x 1200 pixel images, so the images here are resized to 600 x 600 pixel.
+I did this step so that the sketches fit well into the documentation.
+After that, the two sliders for Columns and Rows are created. For performance reasons, these only reach up to 70, whereby a 70 x 70 image can also lead to a loading time. At the end of the block a first image is generated and the reset-button is inizialized.
+
+```js
+function setup() {
+  createCanvas(600, 600);
+  background(145);
+  //Resizing the Images
+  for (let i = 0; i < imageCount; i++) {
+    faces[i].resize(600, 600);
+  }
+
+  colsSlider = createSlider(1, 70, 7, 1);
+  colsSlider.position(15, height * 0.95);
+  rowsSlider = createSlider(1, 70, 7, 1);
+  rowsSlider.position(width - 140, height * 0.95);
+  generatePicture();
+  let button = createButton("Generate");
+  button.mousePressed(generatePicture);
+  button.position(width / 2, height * 0.93);
+}
+```
+
+The draw function only checks if the sliders have been adjusted, if so a new image is generated.
+
+```js
+function draw() {
+  colsSlider.changed(generatePicture);
+  rowsSlider.changed(generatePicture);
+}
+```
+
+Now to the main function generatePicture().
+At the beginning the rows and columns are adjusted to the current values of the slider. Now each row and column is looped and the random image sections are printed.
+
+```js
+//Function to generate an image from four pictures.
+function generatePicture() {
+  cols = colsSlider.value();
+  rows = rowsSlider.value();
+  //Creating the Colums and Rows for
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      let pic = random(faces).get(
+        (j * width) / cols,
+        (i * height) / rows,
+        width / cols,
+        height / rows
+      );
+      image(pic, (j * width) / cols, (i * height) / rows);
+    }
+  }
+}
+```
+
+### Special Outcome
+
+I ran tests with 300 x 300 fields per image. The more colums and rows you set, the more likely the final result will look the same.
+However, the image usually took more than 30 seconds to render. So I rendered 10 images and turned them into a gif. The final result can be seen here.
+
+![300 x 300 Gif](Dokumentation/Tag 5/300px.gif)
