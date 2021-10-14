@@ -26,19 +26,21 @@ I started to create a Prototype which works like my Concept. Thet means it the P
 {% endraw %}
 
 ```js
-// Javascript code with syntax highlighting.
-//Top
-let top = random(faces).get(0, 0, width, height / 4);
-image(top, 0, 0);
-//Eyes
-let eyes = random(faces).get(0, height / 4, width, height / 4);
-image(eyes, 0, height / 4);
-//Nose
-let nose = random(faces).get(0, height / 2, width, height / 4);
-image(nose, 0, height / 2);
-//Chin
-let chin = random(faces).get(0, (height / 4) * 3, width, height / 4);
-image(chin, 0, (height / 4) * 3);
+//function to generate a picture out of 4 parts of whole pictures
+function generatePicture() {
+  //Top
+  let top = random(faces).get(0, 0, width, height / 4);
+  image(top, 0, 0);
+  //Eyes
+  let eyes = random(faces).get(0, height / 4, width, height / 4);
+  image(eyes, 0, height / 4);
+  //Nose
+  let nose = random(faces).get(0, height / 2, width, height / 4);
+  image(nose, 0, height / 2);
+  //Chin
+  let chin = random(faces).get(0, (height / 4) * 3, width, height / 4);
+  image(chin, 0, (height / 4) * 3);
+}
 ```
 
 ### Moniker
