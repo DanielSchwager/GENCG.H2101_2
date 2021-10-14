@@ -12,7 +12,7 @@ function setup() {
   background(145);
 
   //Resizing the Images
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < 17; i++) {
     faces[i].resize(600, 600);
   }
   //Top

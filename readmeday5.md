@@ -8,7 +8,7 @@ Create a program that is generating a parametric face. Your face should at least
 
 ### Concept
 
-My inital idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
+My intial idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
 
 ![Example Image](Dokumentation/Tag 5/Konzept.jpg)
 
@@ -27,10 +27,18 @@ I started to create a Prototype which works like my Concept. Thet means it the P
 
 ```js
 // Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require("./lang/" + l);
-  return true;
-};
+//Top
+let top = random(faces).get(0, 0, width, height / 4);
+image(top, 0, 0);
+//Eyes
+let eyes = random(faces).get(0, height / 4, width, height / 4);
+image(eyes, 0, height / 4);
+//Nose
+let nose = random(faces).get(0, height / 2, width, height / 4);
+image(nose, 0, height / 2);
+//Chin
+let chin = random(faces).get(0, (height / 4) * 3, width, height / 4);
+image(chin, 0, (height / 4) * 3);
 ```
 
 ### Moniker
