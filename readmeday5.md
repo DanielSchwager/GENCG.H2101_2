@@ -22,7 +22,7 @@ I started to create a Prototype which works like my Concept. Thet means it the P
 
 {% raw %}
 
-<iframe src="projects/Day5_Faces/facegenerator_v1/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day5_Faces/facegenerator_v1/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ```js

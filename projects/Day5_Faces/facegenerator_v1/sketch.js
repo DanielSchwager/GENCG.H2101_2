@@ -8,7 +8,7 @@ function preload() {
   }
 }
 function setup() {
-  createCanvas(1200, 1200);
+  createCanvas(600, 600);
   background(145);
 
   //Resizing the Images
