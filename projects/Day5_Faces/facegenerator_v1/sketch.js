@@ -10,6 +10,11 @@ function preload() {
 function setup() {
   createCanvas(1200, 1200);
   background(145);
+
+  //Resizing the Images
+  for (let i = 0; i < 18; i++) {
+    faces[i].resize(600, 600);
+  }
   //Top
   let top = random(faces).get(0, 0, width, height / 4);
   image(top, 0, 0);

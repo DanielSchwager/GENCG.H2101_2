@@ -53,8 +53,8 @@ function manipulatePixels() {
       let b = pixels[indexR + 2];
       let a = pixels[indexR + 3];
 
-      // pixels[indexR + 2] = 255;
-      pixels[indexR] = g;
+      pixels[indexR + 2] = 255;
+      // pixels[indexR] = g;
     }
   }
 

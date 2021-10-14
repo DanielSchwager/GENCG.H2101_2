@@ -12,6 +12,11 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   background(145);
+  //Resizing the Images
+  for (let i = 0; i < 18; i++) {
+    faces[i].resize(600, 600);
+  }
+
   colsSlider = createSlider(1, 70, 7, 1);
   colsSlider.position(15, height * 0.95);
   rowsSlider = createSlider(1, 70, 7, 1);
@@ -29,10 +34,6 @@ function draw() {
 function generatePicture() {
   cols = colsSlider.value();
   rows = rowsSlider.value();
-  //Resizing the Images
-  for (let i = 0; i < 18; i++) {
-    faces[i].resize(600, 600);
-  }
   //Creating the Colums and Rows for
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
