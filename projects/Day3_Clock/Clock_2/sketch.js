@@ -28,11 +28,10 @@ function setup() {
   sDiameter = mDiameter / 7.7459;
   sRadius = sDiameter / 2;
   opacity = 100;
+  background(0);
 }
 
 function draw() {
-  background(0);
-
   const now = new Date();
   const [seconds, minutes, hours] = [
     now.getSeconds(),
@@ -43,18 +42,16 @@ function draw() {
   stroke(255);
   strokeWeight(2);
   noFill();
-  circle(width / 2, height / 2, diameter);
 
   // Hours
-  push();
   if (hours > 12) {
     hAngle = map(hours, 0, 11, 0, 330);
   } else {
     hAngle = map(hours, 12, 23, 0, 330);
   }
   translate(width / 2, height / 2);
-  hX = radius * Math.sin(radians(hAngle));
-  hY = radius * Math.cos(radians(hAngle));
+  hX = radius * cos(hAngle);
+  hY = radius * sin(hAngle);
   line(0, 0, hX, hY);
 
   // Minutes

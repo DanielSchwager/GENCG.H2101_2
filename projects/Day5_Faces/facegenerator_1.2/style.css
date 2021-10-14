@@ -16,7 +16,7 @@ button {
   color: azure;
   padding: 12pt;
   stroke: black;
-  font-size: 32px;
-  border-radius: 1000px;
+  font-size: 22px;
+  border-radius: 100px;
   transform: translate(-50%, -50%);
 }
