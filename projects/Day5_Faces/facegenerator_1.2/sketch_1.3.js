@@ -3,9 +3,10 @@ let colsSlider;
 let cols;
 let rowsSlider;
 let rows;
+let imageCount = 19;
 
 function preload() {
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < imageCount; i++) {
     faces[i] = loadImage("images/Face_" + i + ".png");
   }
 }
@@ -13,7 +14,7 @@ function setup() {
   createCanvas(600, 600);
   background(145);
   //Resizing the Images
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < imageCount; i++) {
     faces[i].resize(600, 600);
   }
 
@@ -31,6 +32,7 @@ function draw() {
   colsSlider.changed(generatePicture);
   rowsSlider.changed(generatePicture);
 }
+//Function to generate an image from four pictures.
 function generatePicture() {
   cols = colsSlider.value();
   rows = rowsSlider.value();

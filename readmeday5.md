@@ -27,11 +27,17 @@ I started to create a Prototype which works like my Concept. Thet means it split
 <iframe src="projects/Day5_Faces/facegenerator_v1/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
+Here is the most important Code used for the Prototype.
+
+random(faces); gets a random Image out of the Array Faces
+img.get(startX, startY, width, height); gets the defined Part of the Picture
+image(img, x, y); draws the picture on the defined x,y-coordinates
+
 ```js
 //Function to generate an image from four pictures.
 function generatePicture() {
   //Top
-  let top = random(faces).get(0, 0, width, height / 4);
+  let top = (0, 0, width, height / 4);
   image(top, 0, 0);
   //Eyes
   let eyes = random(faces).get(0, height / 4, width, height / 4);
