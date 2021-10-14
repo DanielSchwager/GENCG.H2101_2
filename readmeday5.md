@@ -10,15 +10,15 @@ Create a program that is generating a parametric face. Your face should at least
 
 My intial idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
 
-![Example Image](Dokumentation/Tag 5/Konzept_1.png)
+![Konzept Image](Dokumentation/Tag 5/Konzept_1.png)
 
-### Input
+## Input
 
 I needed some Pictures which I could use as an Input. So i searched a few Portraits on Google and then lined them up in Photoshop by using a Mask. Then i had the Idea to take pictures of me and my classmates to make it a little bit more intereesting.
 
 ![Example Image](Dokumentation/Tag 5/Input.png)
 
-### Prototype
+## Prototype
 
 I started to create a Prototype which works like my Concept. Thet means it splits the Image in four Rows and then uses a random Picture for each part. Since my library consists of only 17 images, it can happen that an image is used several times.
 
@@ -65,7 +65,10 @@ In this code, many commands are repeated, which can be simplified in a for-loop.
 
 ## Final product
 
+In the final product I wanted not only rows but also collums which can be adjusted in real time. I was able to do this with a nested loop similar to the grid project. The Colums and Rows are controlled with 2 sliders.
 {% raw %}
 
 <iframe src="projects\Day5_Faces\facegenerator_1.2\index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
+
+![Example Image](Dokumentation/Tag 5/300px.gif)
