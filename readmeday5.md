@@ -20,7 +20,7 @@ I needed some Pictures which I could use as an Input. So i searched a few Portra
 
 ## Prototype
 
-I started to create a Prototype which works like my Concept. Thet means it splits the Image in four Rows and then uses a random Picture for each part. Since my library consists of only 17 images, it can happen that an image is used several times.
+I started to create a Prototype which works like my Concept. That means it splits the Image in four Rows and then uses a random Picture for each part. Since my library consists of only 17 images, it can happen that an image is used several times.
 
 {% raw %}
 

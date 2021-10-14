@@ -2,11 +2,14 @@
 
 ## Computing without computer
 
-### Sprouts
+## Intro
 
-First we played a simple game. It starts with drawing two or more points on a sheeet. Now the first Player has to draw a line which connects them both and draw a new point on this connecting line. The second Player has to do the same
+Today's topic was very open.  I have been interested in meditation for a long time, and the flower of life is often seen in this context. It is a basic shape consisting of overlapping circles. The oldest known example of the Flower Of Life is at least 6000 years old and dates all the way back to Ancient Egypt.
+So I tried to recreate the flower of life in javascript. To get a better idea of the shape I sketched one with pencil and paper.
 
-![Example Image](Dokumentation/Tag 1/Sketch.jpeg)
+### Sketch
+
+![Example Image](Dokumentation/Tag 1/Sketch_1.png)
 
 ```js
 // Javascript code with syntax highlighting.
@@ -20,7 +23,7 @@ var fun = function lang(l) {
 
 {% raw %}
 
-<iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ## Computing with computer
