@@ -19,7 +19,7 @@ function setup() {
     faces[i].resize(600, 600);
   }
 }
-//function to generate a picture out of 4 parts of whole pictures
+//Function to generate an image from four pictures.
 function generatePicture() {
   //Top
   let top = random(faces).get(0, 0, width, height / 4);

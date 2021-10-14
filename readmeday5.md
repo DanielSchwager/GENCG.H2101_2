@@ -10,7 +10,7 @@ Create a program that is generating a parametric face. Your face should at least
 
 My intial idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
 
-![Example Image](Dokumentation/Tag 5/Konzept_1.jpg)
+![Example Image](Dokumentation/Tag 5/Konzept_1.png)
 
 ### Input
 
@@ -26,7 +26,7 @@ I started to create a Prototype which works like my Concept. Thet means it the P
 {% endraw %}
 
 ```js
-//function to generate a picture out of 4 parts of whole pictures
+//Function to generate an image from four pictures.
 function generatePicture() {
   //Top
   let top = random(faces).get(0, 0, width, height / 4);
