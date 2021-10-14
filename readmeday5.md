@@ -6,7 +6,7 @@
 
 Create a program that is generating a parametric face. Your face should at least be controlled by 3 parameters but preferably more. Variations in some of the features can be used to control the expressiveness of the face or some other characteristics (species, gender, etc…) Differentiate continuous parameters (size and position of features) and discrete parameters (piercing, number of eyeballs). Consider the space you’re generating your face in (2D / 3D) and the view angle, front, profile, 3/4?
 
-### Concept
+## Concept
 
 My intial idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
 
@@ -26,6 +26,8 @@ I started to create a Prototype which works like my Concept. Thet means it split
 
 <iframe src="projects/Day5_Faces/facegenerator_v1/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
+
+### Code
 
 Here is the most important Code used for the Prototype.
 
@@ -51,19 +53,17 @@ function generatePicture() {
 }
 ```
 
-### Moniker
+In this code, many commands are repeated, which can be simplified in a for-loop. This could look something like this.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+```js
+  for (let i = 0; i < rows; i++) {
+    row[i] = random(faces).get(0, (i * height) / rows, width, height / rows);
+    image(row[i], 0, (i * height) / rows);
+  }
+}
+```
 
-## Computing with computer
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-- Lorem ipsum dolor sit amet
-- Consetetur sadipscing elitr, sed diam nonumy.
-- At vero eos et accusam et justo duo dolores et ea rebum.
+## Final product
 
 {% raw %}
 
