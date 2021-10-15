@@ -93,6 +93,8 @@ The ‘Egg of Life’ is also a symbol composed of seven circles taken from the 
 
 ### Code
 
+The Egg of Life consists of a central circle surrounded by 6 overlapping circles. These circles do not lie on the edge of the circle, as is the case with the Seed of Life.
+
 The Background is Code from https://happycoding.io/examples/p5js/for-loops/vertical-gradient to make it a little bit more interesting.
 
 ```js
@@ -167,5 +169,28 @@ The most common form of the ‘Flower of Life’ is hexagonal pattern (where the
 ### Code
 
 ```js
+function drawSeed() {
+  circle(0, 0, diameter);
+  push();
+  translate(radius, 0);
+  rotate(300);
+  for (let i = 0; i < 6; i++) {
+    circle(0, 0, diameter);
+    rotate(300);
+    translate(radius, 0);
+  }
+  pop();
+}
 
+function drawFlower() {
+  push();
+  translate(radius, 0);
+  rotate(300);
+  for (let i = 0; i < 6; i++) {
+    drawSeed();
+    rotate(300);
+    translate(radius, 0);
+  }
+  pop();
+}
 ```
