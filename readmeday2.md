@@ -95,7 +95,56 @@ function make3DcolorArray() {
 <iframe src="projects/Day2_Grid/GridArt/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
+## Code
+
+```js
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      var x = i * gridX;
+      var y = j * gridY;
+      fill(colors[i][j]);
+      stroke(0);
+      rect(x, y, gridX, gridY);
+      // circle(x + gridX / 2, y + gridY / 2, gridX, gridY);
+      // let polygon = new Polygon(3, gridY);
+      let polygon = new Polygon(int(random(2, 11)), gridX / 2);
+      polygon.create(x + gridX / 2, y + gridY / 2);
+    }
+  }
+}
+```
+
 ### Clocks
 
 <iframe src="projects/Day2_Grid/radiantlines/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
+
+## Code
+
+```js
+function draw() {
+  background(220);
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      var x = i * gridX;
+      var y = j * gridY;
+      stroke(0);
+      // rect(x, y, gridX, gridY);
+      // line(x, y, x + j * gridX, y + i * gridY);
+      // line(x, y, x + gridX, y + int(random(0, gridY)));
+
+      /// Uhren
+      noFill();
+      circle(x + gridX / 2, y + gridY / 2, gridX);
+      // line(x + gridX / 2, y + gridY / 2, mouseX, mouseY);
+      let angle = atan2(mouseY - y + gridY / 2, mouseX - x + gridX / 2);
+      line(
+        x + gridX / 2,
+        y + gridY / 2,
+        x + gridX / 2 + (cos(angle) * lineWidth) / 2,
+        y + gridY / 2 + sin(angle) * lineWidth
+      );
+    }
+  }
+}
+```
