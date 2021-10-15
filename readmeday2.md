@@ -8,7 +8,7 @@ Write some code to generate tiling pattern or textural composition. Give conside
 
 ## Grid Tutorial
 
-On Tuesday we worked with grids. Since I didn't have much previous knowledge, I watched a tutorial by Daniel Shifferman (https://youtu.be/OTNpiLUSiB4). The tutorial explains how to create a grid and then color it in random shades of gray.
+On Tuesday we worked with grids. Since I didn't have much previous knowledge, I watched a tutorial by Daniel Shiffman (https://youtu.be/OTNpiLUSiB4). The tutorial explains how to create a grid and then color it in random shades of gray.
 
 {% raw %}
 
