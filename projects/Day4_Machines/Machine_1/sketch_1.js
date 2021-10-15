@@ -7,9 +7,7 @@ function setup() {
 }
 
 function draw() {
-  // drawLines();
   drawLinesIteration();
-  // drawLinesIteration2();
 }
 
 function mouseClicked() {
@@ -31,21 +29,6 @@ function drawLinesIteration() {
   for (let i = 0; i < points.length; i++) {
     for (let j = 0; j < i; j++) {
       linePoints(points[i], points[j]);
-    }
-  }
-}
-
-function drawLinesIteration2() {
-  stroke("red");
-  for (let i = 0; i < points.length; i++) {
-    if (i < 4) {
-      for (let j = 0; j < i; j++) {
-        linePoints(points[i], points[j]);
-      }
-    } else {
-      for (let j = i - 3; j < i; j++) {
-        linePoints(points[i], points[j]);
-      }
     }
   }
 }

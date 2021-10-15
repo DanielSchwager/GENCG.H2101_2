@@ -8,9 +8,7 @@ function setup() {
 }
 
 function draw() {
-  // drawLines();
   drawShapes();
-  // ctVertecies();
 }
 
 function mouseClicked() {
@@ -32,15 +30,15 @@ function drawShapes() {
   endShape(CLOSE);
 }
 
-function ctVertecies() {
-  beginShape();
-  for (let a = 0; a < 360; a++) {
-    let x = 100 * sin(a) + 200;
-    let y = 100 * cos(a) + 200;
-    vertex(x, y);
-  }
-  endShape();
-}
+// function ctVertecies() {
+//   beginShape();
+//   for (let a = 0; a < 360; a++) {
+//     let x = 100 * sin(a) + 200;
+//     let y = 100 * cos(a) + 200;
+//     vertex(x, y);
+//   }
+//   endShape();
+// }
 
 function drawLines() {
   for (let i = 0; i < points.length - 1; i++) {
