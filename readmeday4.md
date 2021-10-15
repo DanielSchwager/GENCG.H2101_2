@@ -16,6 +16,11 @@ Create a program that expands, augment, distort, questions, complicate, interpre
 ### Code
 
 ```js
+function mouseClicked() {
+  circle(mouseX, mouseY, 10);
+  points[mouseClicks] = [mouseX, mouseY];
+  mouseClicks++;
+}
 function drawLinesIteration() {
   stroke("red");
   for (let i = 0; i < points.length; i++) {
@@ -23,6 +28,10 @@ function drawLinesIteration() {
       linePoints(points[i], points[j]);
     }
   }
+}
+
+function linePoints(point1, point2) {
+  line(point1[0], point1[1], point2[0], point2[1]);
 }
 ```
 
