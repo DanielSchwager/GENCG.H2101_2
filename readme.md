@@ -120,7 +120,7 @@ The ‘Fruit of Life’ symbol is composed of 13 circles taken from the design o
 
 {% raw %}
 
-<iframe src="projects/Day1_Intro/FruitOfLife/index.html" width="100%" height="600" frameborder="no"></iframe>
+<iframe src="projects/Day1_Intro/FruitofLife/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ### Code
