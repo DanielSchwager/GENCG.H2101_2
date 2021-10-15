@@ -116,6 +116,8 @@ function make3DcolorArray() {
 
 ### Clocks
 
+{% raw %}
+
 <iframe src="projects/Day2_Grid/radiantlines/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
