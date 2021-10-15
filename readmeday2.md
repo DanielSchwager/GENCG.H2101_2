@@ -12,7 +12,7 @@ On Tuesday we worked with grids. Since I didn't have much previous knowledge, I 
 
 {% raw %}
 
-<iframe src="projects/Day2_Grid/Grid/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day2_Grid/CT_2D_Array/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
 ```js
@@ -62,14 +62,14 @@ function draw() {
 
 {% raw %}
 
-### Clocks
-
-<iframe src="projects/Day2_Grid/radiantlines/index.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-
 ## Grid with Polygons
 
 {% raw %}
 
 <iframe src="projects/Day2_Grid/GridArt/index.html" width="100%" height="450" frameborder="no"></iframe>
+{% endraw %}
+
+### Clocks
+
+<iframe src="projects/Day2_Grid/radiantlines/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
