@@ -194,3 +194,5 @@ function drawFlower() {
   pop();
 }
 ```
+
+![Flower of Life Sketch](Dokumentation/Tag 1/Flower_of_Life.gif)
