@@ -5,6 +5,7 @@ var gridY;
 
 var colors = [];
 
+//creating the 2D Array
 function make2Darray(cols, rows) {
   var arr = new Array(cols);
   for (let i = 0; i < arr.length; i++) {
@@ -18,12 +19,6 @@ function setup() {
   gridX = width / cols;
   gridY = height / rows;
 
-  // for (let i = 0; i < cols; i++) {
-  //   colors[i] = [];
-  //   for (let j = 0; j < rows; j++) {
-  //     colors[i][j] = random(255);
-  //   }
-  // }
   colors = make2Darray(cols, rows);
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
