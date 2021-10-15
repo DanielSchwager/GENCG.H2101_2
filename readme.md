@@ -93,6 +93,8 @@ The ‘Egg of Life’ is also a symbol composed of seven circles taken from the 
 
 ### Code
 
+The Background is Code from https://happycoding.io/examples/p5js/for-loops/vertical-gradient to make it a little bit more interesting.
+
 ```js
 function drawEggOfLife2() {
   let length = 2 * radius * sin(120 / 2);
@@ -128,16 +130,42 @@ The ‘Fruit of Life’ symbol is composed of 13 circles taken from the design o
 ### Code
 
 ```js
-
+function drawFruitOfLife() {
+  circle(0, 0, diameter);
+  for (let i = 0; i < 6; i++) {
+    push();
+    for (let j = 0; j < 2; j++) {
+      translate(radius * 2, 0);
+      circle(0, 0, diameter);
+    }
+    pop();
+    rotate(360 / 6);
+  }
+}
 ```
 
-<iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="600" frameborder="no"></iframe>
-## FLower of Life
+## Flower of Life
+
+The flower of life is a geometrical shape composed of multiple evenly-spaced, overlapping circles arranged in a flower like pattern with six fold symmetry like a hexagon. The perfect form, proportion and harmony of the FOL has been known to philosophers, architects and artist around the world. Pagans consider it to be sacred geometry containing ancient religious value depicting the fundamental forms of space and time. In the pagan sense, it is believed to contain a type of Akashic Record of basic information of all living things and is the visual expression of the connections of life that run through all sentient beings.
+
+In New Age thought, the Flower of Life has provided what is considered to be deep spiritual meaning and forms of enlightenment to those who have studied it as sacred geometry. There are groups of people all over the world who derive particular beliefs and forms of meditation based (at least in part) on the Flower of Life.
+
+The flower of life symbol represents important meaning to many throughout history. The symbol can be found in manuscripts, temples and art throughout cultures around the world.
+The most common form of the ‘Flower of Life’ is hexagonal pattern (where the center of each circle is on the circumference of six surrounding circles of the same diameter), made up of 19 complete circles and 36 partial circular arcs, enclosed by a large circle..(https://www.tokenrock.com/subjects/flower-of-life/)
+
+### Sketch
 
 ![Flower of Life Sketch](Dokumentation/Tag 1/Sketch_1.png)
+
+### P5.js
+
 {% raw %}
 
 <iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
+
+### Code
+
 ```js
+
 ```

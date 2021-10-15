@@ -12,6 +12,7 @@ function draw() {
   noFill();
   stroke(0);
   translate(width / 2, height / 2);
+  rotate(30);
   drawFruitOfLife();
 }
 
