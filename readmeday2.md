@@ -53,7 +53,7 @@ function draw() {
 };
 ```
 
-### 3D Color Grid
+## Color Grid
 
 {% raw %}
 
@@ -61,6 +61,32 @@ function draw() {
 {% endraw %}
 
 {% raw %}
+
+### Code
+
+```js
+function make3Darray(cols, rows, depth) {
+  var arr = new Array(cols);
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = new Array(rows);
+    for (let j = 0; j < rows; j++) {
+      arr[i][j] = new Array(depth);
+    }
+  }
+  return arr;
+}
+
+function make3DcolorArray() {
+  colors = make3Darray(cols, rows, depth);
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      for (let z = 0; z < depth; z++) {
+        colors[i][j][z] = random(255);
+      }
+    }
+  }
+}
+```
 
 ## Grid with Polygons
 
