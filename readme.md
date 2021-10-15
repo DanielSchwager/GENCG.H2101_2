@@ -20,15 +20,39 @@ around the first circle. The shape that emerges is called the Seed of Life.
 
 {% raw %}
 
-<iframe src="projects/Day1_Intro/SeedOfLife/index.html" width="100%" height="600" frameborder="no"></iframe>
+<iframe src="projects/Day1_Intro/SeedOfLife/index.html" width="100%" height="300" frameborder="no"></iframe>
 {% endraw %}
 
+### Code
+
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require("./lang/" + l);
-  return true;
-};
+function drawSeed() {
+  circle(0, 0, diameter);
+  push();
+  translate(radius, 0);
+  circle(0, 0, diameter);
+  pop();
+  push();
+  translate(-radius, 0);
+  circle(0, 0, diameter);
+  pop();
+  push();
+  translate(radius / 2, (Math.sqrt(3) / 2) * radius);
+  circle(0, 0, diameter);
+  pop();
+  push();
+  translate(-radius / 2, (Math.sqrt(3) / 2) * radius);
+  circle(0, 0, diameter);
+  pop();
+  push();
+  translate(radius / 2, -(Math.sqrt(3) / 2) * radius);
+  circle(0, 0, diameter);
+  pop();
+  push();
+  translate(-radius / 2, -(Math.sqrt(3) / 2) * radius);
+  circle(0, 0, diameter);
+  pop();
+}
 ```
 
 ### FLower of Life

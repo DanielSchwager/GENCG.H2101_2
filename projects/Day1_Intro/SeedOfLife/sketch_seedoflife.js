@@ -1,19 +1,20 @@
-let diameter = 100;
+let diameter = 130;
 let radius = diameter / 2;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(600, 300);
   angleMode(DEGREES);
-}
-
-function draw() {
   background(0);
   noFill();
   stroke(255);
-  translate(width / 2, height / 2);
+  translate(width / 4, height / 2);
+  drawSeed();
+  translate((width * 2) / 4, 0);
   circle(0, 0, diameter * 2);
   drawSeed();
 }
+
+function draw() {}
 
 function drawSeed() {
   circle(0, 0, diameter);
