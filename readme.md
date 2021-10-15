@@ -5,7 +5,7 @@
 ## Intro
 
 Today's topic was very open.  I have been interested in meditation for a long time, and the flower of life is a reoccurring symbol. It is a basic shape consisting of overlapping circles. The oldest-known example of the Flower Of Life is at least 6000 years old and dates all the way back to Ancient Egypt.
-So I tried to recreate the flower of life in javascript. To get a better idea of the shape, I sketched one with pencil and paper.
+I tried to recreate the flower of life in javascript. To get a better idea of the shape, I sketched one with pencil and paper.
 
 ## Seed of Life
 
@@ -76,6 +76,8 @@ function drawSeed4() {
 
 ## Egg of Life
 
+The ‘Egg of Life’ is also a symbol composed of seven circles taken from the design of the Flower of Life. The shape of the Egg of Life is said to be the shape of a multi-cellular embryo in its first hours of creation.(https://www.tokenrock.com/subjects/flower-of-life/)
+
 ### Sketch
 
 ![Egg of Life Sketch](Dokumentation/Tag 1/Eggoflife.png)
@@ -106,6 +108,27 @@ function drawEggOfLife2() {
 }
 ```
 
+## Fruit of Life
+
+The ‘Fruit of Life’ symbol is composed of 13 circles taken from the design of the Flower of Life. It is said to be the blueprint of the universe, containing the basis for the design of every atom, molecular structure, life form, and everything in existence. It contains the geometric basis for the delineation of Metatron’s Cube, which brings forth the platonic solids.(https://www.tokenrock.com/subjects/flower-of-life/)
+
+### Sketch
+
+![Fruit of Life Sketch](Dokumentation/Tag 1/Fruitoflife.png)
+
+### P5.js
+
+{% raw %}
+
+<iframe src="projects/Day1_Intro/FruitOfLife/index.html" width="100%" height="600" frameborder="no"></iframe>
+{% endraw %}
+
+### Code
+
+```js
+
+```
+
 <iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="600" frameborder="no"></iframe>
 ## FLower of Life
 
@@ -114,3 +137,5 @@ function drawEggOfLife2() {
 
 <iframe src="projects/Day1_Intro/FlowerofLife/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
+```js
+```
