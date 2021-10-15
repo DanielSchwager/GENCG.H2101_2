@@ -12,6 +12,8 @@ I tried to recreate the flower of life in javascript. To get a better idea of th
 To draw a flower of life, start with a circle. Now draw another circle with the same radius, whose center is on the line of the first circle. Repeat this 5 times at the intersections of the circles.
 around the first circle. The shape that emerges is called the Seed of Life.
 
+The ‘Seed of Life’ is formed from seven circles being placed with sixfold symmetry, forming a pattern of circles and lenses, which acts as a basic component of the Flower of Life’s design. According to some, the seed of life depicts the 7 days of creation in which God created life.(https://www.tokenrock.com/subjects/flower-of-life/)
+
 ### Sketch
 
 ![Seed of Life Sketch](Dokumentation/Tag 1/Seedoflife.png)
