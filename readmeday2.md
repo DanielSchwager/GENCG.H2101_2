@@ -55,12 +55,12 @@ function draw() {
 
 ## Color Grid
 
+As a challenge I used this code and wanted to colorize the grid.This was possible by making the 2D array 3D. Then I added random values between 0 and 255 to the 3D array.
+
 {% raw %}
 
 <iframe src="projects/Day2_Grid/Grid/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
-
-{% raw %}
 
 ### Code
 
@@ -90,12 +90,16 @@ function make3DcolorArray() {
 
 ## Grid with Polygons
 
+In the final Product, I used a Polygon class I created in Beautiful Math. This Class lets me create a random Polygon in each tile.
+
 {% raw %}
 
 <iframe src="projects/Day2_Grid/GridArt/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
 ## Code
+
+The Easy Part was to use the for-loop from the previous examples and draw the outlines of the Clocks. Now to the more difficult part, which was the hands of the clocks. Luckily Nicolas used a similar technique in his Project, so I could use some of his code. The atan2() function calculates the angle from the mouse pointer to the center of each grid. Now it's easy to draw a line from the center of the grid to the outside of the circle using grid center + cos(angle) \* length
 
 ```js
   for (let i = 0; i < cols; i++) {
@@ -116,9 +120,11 @@ function make3DcolorArray() {
 
 ### Clocks
 
+To further deepen my understanding for grids, I wanted to make a grid full of Clock alike shapes, which follow the mouse courser.
+
 {% raw %}
 
-<iframe src="projects/Day2_Grid/radiantlines/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day2_Grid/Grid_Clocks/index.html" width="100%" height="450" frameborder="no"></iframe>
 {% endraw %}
 
 ## Code
@@ -131,19 +137,17 @@ function draw() {
       var x = i * gridX;
       var y = j * gridY;
       stroke(0);
-      // rect(x, y, gridX, gridY);
-      // line(x, y, x + j * gridX, y + i * gridY);
-      // line(x, y, x + gridX, y + int(random(0, gridY)));
 
       /// Uhren
       noFill();
       circle(x + gridX / 2, y + gridY / 2, gridX);
+      //Some Helpful Code from Nicolas, which I changed to fit my project.
       // line(x + gridX / 2, y + gridY / 2, mouseX, mouseY);
       let angle = atan2(mouseY - y + gridY / 2, mouseX - x + gridX / 2);
       line(
         x + gridX / 2,
         y + gridY / 2,
-        x + gridX / 2 + (cos(angle) * lineWidth) / 2,
+        x + gridX / 2 + cos(angle) * lineWidth,
         y + gridY / 2 + sin(angle) * lineWidth
       );
     }
