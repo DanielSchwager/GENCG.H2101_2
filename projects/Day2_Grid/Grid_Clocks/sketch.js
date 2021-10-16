@@ -25,9 +25,9 @@ function draw() {
       /// Uhren
       noFill();
       circle(x + gridX / 2, y + gridY / 2, gridX);
-      //Some Helpful Code from Nicolas, which I changed to fit my project.
+      //Some helpful Code from Nicolas, which I changed to fit my project.
       // line(x + gridX / 2, y + gridY / 2, mouseX, mouseY);
-      let angle = atan2(mouseY - y + gridY / 2, mouseX - x + gridX / 2);
+      let angle = atan2(mouseY - y - gridY / 2, mouseX - x - gridX / 2);
       line(
         x + gridX / 2,
         y + gridY / 2,

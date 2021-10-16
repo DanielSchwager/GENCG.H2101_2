@@ -129,6 +129,8 @@ To further deepen my understanding for grids, I wanted to make a grid full of Cl
 
 ## Code
 
+The Easy Part was to use the for-loop from the previous examples and draw the outlines of the Clocks. Now to the more difficult part, which was the hands of the clocks. Luckily Nicolas used a similar technique in his Project, so I could use some of his code. The atan2() function calculates the angle from the mouse pointer to the center of each grid. Now it's easy to draw a line from the center of the grid to the outside of the circle using grid center + cos(angle) \* lenght.
+
 ```js
 function draw() {
   background(220);
@@ -141,14 +143,14 @@ function draw() {
       /// Uhren
       noFill();
       circle(x + gridX / 2, y + gridY / 2, gridX);
-      //Some Helpful Code from Nicolas, which I changed to fit my project.
+      //Some helpful Code from Nicolas, which I changed to fit my project.
       // line(x + gridX / 2, y + gridY / 2, mouseX, mouseY);
-      let angle = atan2(mouseY - y + gridY / 2, mouseX - x + gridX / 2);
+      let angle = atan2(mouseY - y - gridY / 2, mouseX - x - gridX / 2);
       line(
         x + gridX / 2,
         y + gridY / 2,
-        x + gridX / 2 + cos(angle) * lineWidth,
-        y + gridY / 2 + sin(angle) * lineWidth
+        x + gridX / 2 + cos(angle) * lineLength,
+        y + gridY / 2 + sin(angle) * lineLength
       );
     }
   }
