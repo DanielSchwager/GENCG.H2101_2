@@ -197,7 +197,7 @@ function draw() {
   // first draw the debug video and annotations
   push();
   // downscale the webcam capture so it doesn't take up too much screen sapce
-  scale(2);
+  scale(1);
   image(capture, 0, 0, capture.width, capture.height);
   noFill();
   stroke(255, 0, 0);
