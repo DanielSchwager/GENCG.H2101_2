@@ -16,7 +16,7 @@ I wanted to use the Facelibrary. My idea was to censor/pixelate the eyes.
 
 {% raw %}
 
-<iframe src="projects/Day6_Pixels/pixels_2/index.html" width="600" height="400" frameborder="no"></iframe>
+<iframe src="projects/Day6_Pixels/pixels_2/index.html" width="600" height="450" frameborder="no"></iframe>
 {% endraw %}
 
 ### Code
