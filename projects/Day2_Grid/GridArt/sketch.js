@@ -40,7 +40,7 @@ function make3DcolorArray() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   gridX = width / cols;
   gridY = height / rows;
   make3DcolorArray();

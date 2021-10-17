@@ -8,7 +8,7 @@ Write some code to generate tiling pattern or textural composition. Give conside
 
 ## Concept
 
-My idea was to create a grid and then reuse a class from Beautiful Math, with which you can easily create polygons
+My idea was to create a grid and then reuse a class from Beautiful Math, with which you can easily create polygons.
 
 ![Konzept Image](Dokumentation/Tag 2/Skizze.png)
 
@@ -18,7 +18,7 @@ On Tuesday we worked with grids. Since I didn't have much previous knowledge, I 
 
 {% raw %}
 
-<iframe src="projects/Day2_Grid/CT_2D_Array/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day2_Grid/CT_2D_Array/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ```js
@@ -61,11 +61,11 @@ function draw() {
 
 ## Color Grid
 
-As a challenge I used this code and wanted to colorize the grid.This was possible by making the 2D array 3D. Then I added random values between 0 and 255 to the 3D array.
+As a challenge I used this code and I wanted to colorize the grid. This was possible by making the 2D array 3D. Then I added random values between 0 and 255 to the 3D array.
 
 {% raw %}
 
-<iframe src="projects/Day2_Grid/Grid/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day2_Grid/Grid/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ### Code
@@ -100,7 +100,7 @@ In the final Product, I used a Polygon class I created in Beautiful Math. This C
 
 {% raw %}
 
-<iframe src="projects/Day2_Grid/GridArt/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day2_Grid/GridArt/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ## Code
@@ -130,7 +130,7 @@ To further deepen my understanding for grids, I wanted to make a grid full of Cl
 
 {% raw %}
 
-<iframe src="projects/Day2_Grid/Grid_Clocks/index.html" width="100%" height="450" frameborder="no"></iframe>
+<iframe src="projects/Day2_Grid/Grid_Clocks/index.html" width="100%" height="600" frameborder="no"></iframe>
 {% endraw %}
 
 ## Code

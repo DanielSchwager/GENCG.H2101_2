@@ -5,7 +5,7 @@ var gridY;
 var lineLength;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   angleMode(DEGREES);
   cols = 10;
   rows = 10;
