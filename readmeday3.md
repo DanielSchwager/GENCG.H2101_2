@@ -10,7 +10,7 @@ While designing your clock ponder things like biological time (chronobiology), u
 
 ## Concept
 
-My idea was to create a grid and then reuse a class from Beautiful Math, with which you can easily create polygons
+My idea was to represent time using circles. The circles act as clock hands, like on an analog clock. However, to make it original, the circles are nested inside each other.
 
 ![Konzept Image](Dokumentation/Tag 3/Skizze.png)
 
