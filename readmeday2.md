@@ -6,6 +6,12 @@
 
 Write some code to generate tiling pattern or textural composition. Give consideration to aesthetic issues like symetry, rhythm, color, details at multiple scales; precise balance of form and the balance between organic and geometric forms. The pattern should be designed so that it is infinitely tiled or extended.
 
+## Concept
+
+My idea was to create a grid and then reuse a class from Beautiful Math, with which you can easily create polygons
+
+![Konzept Image](Dokumentation/Tag 2/Skizze.png)
+
 ## Grid Tutorial
 
 On Tuesday we worked with grids. Since I didn't have much previous knowledge, I watched a tutorial by Daniel Shiffman (https://youtu.be/OTNpiLUSiB4). The tutorial explains how to create a grid and then color it in random shades of gray.
