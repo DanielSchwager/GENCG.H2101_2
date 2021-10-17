@@ -98,21 +98,40 @@ function drawFacesCensored(faces, filled) {
   for (let i = 0; i < faces.length; i++) {
     const keypoints = faces[i].scaledMesh;
 
-    for (let j = 0; j < keypoints.length; j++) {
-      const [x, y, z] = keypoints[j];
-      circle(x, y, 5);
-      push();
-      strokeWeight(1);
-      text(j, x, y);
-      pop();
-    }
-    //Eyes Censor
-    //Left Eye (0,1,7,8)
-    //Right Eye (2,3,9,10)
-    let lefteye = keypoints[0];
+    //censur Eyes
+    //Left Eye Coordinates(0,1,7,8)
     const [x0, y0, z0] = keypoints[0];
+    //Right Eye Coordinates(2,3,9,10)
+    const [x3, y3, z3] = keypoints[3];
+    //
+    let cWidth = 1.3;
+    let product = Math.pow(x3 - x0, 2) + Math.pow(y3 - y0, 2);
+    let lengthEyes = Math.sqrt(product) * cWidth;
+    let cencorHeight = 40;
 
-    let length = rect(x0, y0, 100, 100);
+    let eyesCenterX = (x0 + x3) / 2;
+    let eyesCenterY = (y0 + y3) / 2;
+    circle(eyesCenterX, eyesCenterY, 20);
+    translate(eyesCenterX, eyesCenterY);
+    //Calculates angle from the center to the right eye
+    let angle = atan2(y3 - eyesCenterY, x3 - eyesCenterX);
+    rotate(angle);
+    noStroke();
+    fill("black");
+    rect(-lengthEyes / 2, -cencorHeight / 2, lengthEyes, cencorHeight);
+
+    censorFieldsWidth = 7;
+    censorFieldsHeight = 3;
+    for (let i = 0; i < censorFieldsWidth; i++) {
+      for (let j = 0; j < censorFieldsHeight; j++) {
+        rect(
+          -lengthEyes / 2 + (i * lengthEyes) / censorFieldsWidth,
+          -cencorHeight / 2 + (j * cencorHeight) / censorFieldsHeight,
+          lengthEyes / censorFieldsWidth,
+          cencorHeight / censorFieldsHeight
+        );
+      }
+    }
 
     for (let j = 0; j < TRI.length; j += 3) {
       let a = keypoints[TRI[j]];
