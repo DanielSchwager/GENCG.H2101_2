@@ -12,26 +12,35 @@ My intial idea was to create a Face Generator, which creates a new Face using mu
 
 ![Konzept Image](Dokumentation/Tag 6/Skizze.png)
 
-### Moniker
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+### Censoring Eyes
 
 {% raw %}
 
 <iframe src="projects/Day6_Pixels/pixels_2/index.html" width="100%" height="400" frameborder="no"></iframe>
 {% endraw %}
 
-## Computing with computer
+```js
+function drawFacesCensored(faces, filled) {
+  for (let i = 0; i < faces.length; i++) {
+    const keypoints = faces[i].scaledMesh;
+    //Left Eye Coordinates(0,1,7,8)
+    const [x0, y0, z0] = keypoints[0];
+    //Right Eye Coordinates(2,3,9,10)
+    const [x3, y3, z3] = keypoints[3];
+    //
+    let cWidth = 1.3;
+    let product = Math.pow(x3 - x0, 2) + Math.pow(y3 - y0, 2);
+    let lengthEyes = Math.sqrt(product) * cWidth;
+    let cencorHeight = 40;
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-{% raw %}
-
-<iframe src="content/day01/02/embed.html" width="100%" height="450" frameborder="no"></iframe>
-{% endraw %}
-
-- Lorem ipsum dolor sit amet
-- Consetetur sadipscing elitr, sed diam nonumy.
-- At vero eos et accusam et justo duo dolores et ea rebum.
+    let eyesCenterX = (x0 + x3) / 2;
+    let eyesCenterY = (y0 + y3) / 2;
+    translate(eyesCenterX, eyesCenterY);
+    //Calculates angle from the center to the right eye
+    let angle = atan2(y3 - eyesCenterY, x3 - eyesCenterX);
+    rotate(angle);
+    noStroke();
+    fill("black");
+    rect(-lengthEyes / 2, -cencorHeight / 2, lengthEyes, cencorHeight);
+  }
+```

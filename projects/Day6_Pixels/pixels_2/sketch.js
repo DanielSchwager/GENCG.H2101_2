@@ -93,12 +93,10 @@ function drawFaces(faces, filled) {
   }
 }
 
-// draw a face object returned by facemesh
+// censor the eyes
 function drawFacesCensored(faces, filled) {
   for (let i = 0; i < faces.length; i++) {
     const keypoints = faces[i].scaledMesh;
-
-    //censur Eyes
     //Left Eye Coordinates(0,1,7,8)
     const [x0, y0, z0] = keypoints[0];
     //Right Eye Coordinates(2,3,9,10)
@@ -111,7 +109,6 @@ function drawFacesCensored(faces, filled) {
 
     let eyesCenterX = (x0 + x3) / 2;
     let eyesCenterY = (y0 + y3) / 2;
-    circle(eyesCenterX, eyesCenterY, 20);
     translate(eyesCenterX, eyesCenterY);
     //Calculates angle from the center to the right eye
     let angle = atan2(y3 - eyesCenterY, x3 - eyesCenterX);
