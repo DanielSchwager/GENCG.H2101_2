@@ -1,7 +1,5 @@
 # Day 01
 
-## Computing without computer
-
 ## Intro
 
 Today's topic was very open.  I have been interested in meditation for a long time, and the flower of life is a reoccurring symbol. It is a basic shape consisting of overlapping circles. The oldest-known example of the Flower Of Life is at least 6000 years old and dates all the way back to Ancient Egypt.

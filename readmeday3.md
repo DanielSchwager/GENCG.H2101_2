@@ -8,6 +8,12 @@ Today we’ll work on building a device visualising the passing of time. Your de
 
 While designing your clock ponder things like biological time (chronobiology), ultradian rhythms and infradian rhythms, solar and lunar cycles, celestial time, geological time, decimal time, historical time, psychological time, and subjective time.
 
+## Concept
+
+My idea was to create a grid and then reuse a class from Beautiful Math, with which you can easily create polygons
+
+![Konzept Image](Dokumentation/Tag 3/Skizze.png)
+
 ## Clock Prototype
 
 {% raw %}
