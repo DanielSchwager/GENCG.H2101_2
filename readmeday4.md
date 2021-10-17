@@ -8,6 +8,7 @@ Create a program that expands, augment, distort, questions, complicate, interpre
 
 ## Drawing Machine 1
 
+The first drawing machine connects all points with the new point.
 {% raw %}
 
 <iframe src="projects/Day4_Machines/Machine_1/index.html" width="100%" height="450" frameborder="no"></iframe>
@@ -35,6 +36,9 @@ function linePoints(point1, point2) {
 }
 ```
 
+## Drawing Machine 2
+
+A similar approach was taken with the second drawing machine. Here, however, the points are created as shapes.
 {% raw %}
 
 <iframe src="projects/Day4_Machines/Machine_1.2/index.html" width="100%" height="450" frameborder="no"></iframe>

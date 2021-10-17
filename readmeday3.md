@@ -107,6 +107,8 @@ function draw() {
 
 ## Clock with proportions
 
+Here the area of the circles was adapted to the proportions. That is, the area of the minute circle fits 60 times in the hour circle, etc..
+
 {% raw %}
 
 <iframe src="projects/Day3_Clock/Clock_1.2/index.html" width="100%" height="450" frameborder="no"></iframe>
