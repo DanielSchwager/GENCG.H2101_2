@@ -8,7 +8,7 @@ Pixels are your materials for today. Use them as a starting point to create an o
 
 ## Concept
 
-My intial idea was to create a Face Generator, which creates a new Face using multiple Pictures. In the Sketch you will see that i wanted to start simple with one Column and 4 Rows.
+I wanted to use the Facelibrary. My idea was to censor/pixelate the eyes.
 
 ![Konzept Image](Dokumentation/Tag 6/Skizze.png)
 
@@ -18,6 +18,8 @@ My intial idea was to create a Face Generator, which creates a new Face using mu
 
 <iframe src="projects/Day6_Pixels/pixels_2/index.html" width="100%" height="400" frameborder="no"></iframe>
 {% endraw %}
+
+### Code
 
 ```js
 function drawFacesCensored(faces, filled) {
